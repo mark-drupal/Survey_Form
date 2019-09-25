@@ -1,0 +1,136 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <main>
+    <!-- User Story 1# =The title  -->
+    <div>
+        <h1 id="title">Survey Form</h1>
+      </div>
+
+    <!--= User Story 2#  = This is the description for the form -->
+    <div>
+        <p id="description">A description of this form </p>
+      </div>
+
+    <!--User Story 3# = This is form element-->
+    <div>
+      <form action="foobar.html" id="survey-form">
+
+          <!--User Story #4 = This is the name text box-->
+          <div>
+            <!-- User Story #10 name-label element-->
+            <label for="name" id="name-label">
+              <!-- User Story #11 - place holder text has been added -->
+              Name:<input type="text" id="name" placeholder="Type your name here" required>
+            </label>
+          </div>
+
+          <!-- User Story #5 - the email -->
+          <div>
+            <!-- User Story #10 email-label element-->
+            <label for="email" id="email-label">
+              <!-- User Story #6 - the text box is of type email which should validate the email address -->
+              <!-- User Story #11 - place holder text has been added -->
+              Email:<input type="email" id="email" placeholder="Type your email address" required>
+            </label>
+          </div>
+
+          <!-- User Story #7 - Number Text Box -->
+          <div>
+            <!-- User Story #10 number-label element-->
+            <label for="number" id="number-label">
+              <!-- User Story #8- the text box is of number which should only accept numbers
+                   User Story #9 - the min and max properties have been set-->
+                   <!-- User Story #11 - place holder text has been added -->
+              Age:<input type="number" id="number" placeholder="Enter a number" min=1 max = 99 required>
+            </label>
+          </div>
+
+          <!-- User Story #12 - Dropdown box -->
+          <div>
+            <label for="dropdown" id="dropdown-label">
+              <p>Which option best describes your current role:</p>
+            </label>
+                <select id="dropdown" placeholder="select an option">
+                  <option value="student">Student</option>
+                  <option value="full time job">Full time Job</option>
+                  <option value="full time learner">full time learner</option>
+                  <option value="perfer not to say">Prefer not to say</option>
+                  <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!--User Story #13 - this is the radio buttons -->
+            <div>
+              <fieldset>
+                <legend>How likely is it that you would recommend freecodecamp to a friend?</legend>
+                  <input type="radio" name="recommend" value="definately" checked>definately<br>
+                  <input type="radio" name="recommend" value="maybe">maybe<br>
+                  <input type="radio" name="recommend" value="not-sure">not-sure<br>
+              </fieldset>
+            </div>
+
+            <!-- User Story #14 - Adition of the checkboxes onto the form -->
+            <div id="checkbox-label">
+              <p>Things that should be improved in the future (check all that apply)</p>
+            </div>
+            <div id="checkboxes">
+                  <label for="front-end" id="front-end-label">
+                    <input id="front-end" type="checkbox" name="improvements" value="front-end-projects">Front-end Projects
+                  </label>
+                  <label for="back-end" id="back-end-label">
+                    <input id="back-end" type="checkbox" name="improvements" value="back-end-projects">Back-end Projects
+                  </label>
+                  <label for="data-visualisation" id="data-visualisation-label">
+                    <input id="data-visualisation" type="checkbox" name="improvements" value="improvements">Data visualisation
+                  </label>
+                  <label for="challenges" id="challenges-label">
+                    <input id="challenges" type="checkbox" name="improvements" value ="challenges">challenges
+                  </label>
+                  <label for="open-source" id="open-source-label">
+                    <input id="open-source" type="checkbox" name="improvements" value ="open-source">Open Source Community
+                  </label>
+                  <label for="gitter-help-rooms" id="gitter-help-rooms-label">
+                    <input id="gitter-help-rooms" type="checkbox" name="improvements" value="gitter-help-rooms">Gitter help rooms
+                  </label>
+                  <label for="videos" id="videos-label">
+                    <input id="videos" type="checkbox" name="improvements" value="videos">Videos
+                  </label>
+                  <label for="city-meetups" id="city-meetups-label">
+                    <input id="city-meetups" type="checkbox" name="improvements" value="city-meetups">City Meetups
+                  </label>
+                  <label for="wiki" id="wiki-label">
+                    <input id="wiki" type="checkbox" name="improvements" value="wiki">Wiki
+                  </label>
+                  <label for="forum" id="forum-label">
+                    <input id="forum" type="checkbox" name="improvements" value="forum">Forum
+                  </label>
+                  <label for="aditional-course" id="aditional-courses-label">
+                    <input id="additional-courses" type="checkbox" name="improvements" value="aditional-courses">Aditional Courses
+                  </label>
+            </div>
+
+          <!--User Story #15 - The text Area -->
+            <div>
+              <p id="text-area-label">Any aditional comments or suggestions?</p>
+              <textarea>
+                Enter Your comments here...
+              </textarea>
+            </div>
+
+          <!--User Story#16 - The submit button -->
+            <div>
+              <button type="submit" id="submit">Submit Form</button>
+            </div>
+
+        </form>
+    </div>
+
+  </main>
+
+</body>
+</html>    
